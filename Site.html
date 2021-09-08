@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Fintech Paçoca </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="center">
+                <div class="logo">
+                    <h2>Fintech Paçoca</h2>
+                </div>
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="center">
+                <div class="main2">
+                <h2>Simulador de mensalidade</h2>
+                </div>
+            </div>
+            <div class="form">
+            <form class="responder" id="respostas">
+            <div class="input">
+                <label class="texto">Nome</label>
+                <input type="text" id="nome">
+            </br>
+                <label class="texto">Mensalidade</label>
+                <input type="number" id="mensalidade"> 
+            </br>
+                <label class="texto">Tempo</label>
+                <select name="anos" id="tempo">
+                    <option value='0' enabled>Selecione</option>
+                    <option value='1' enabled>1 ano</option> 
+                    <option value='2' enabled>2 anos</option>
+                    <option value='3' enabled>3 anos</option>
+                </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+                    <div class="boton">
+                <form class="botaozinho">
+            <div class="botao">
+               <button onclick="simular()" id="simular" class="btnSimular"> Simular </button>
+                </div>
+             </div>
+            </form>
+        </section>
+
+        <script src="./main.js"></script>
+
+    </body>
+</html>
